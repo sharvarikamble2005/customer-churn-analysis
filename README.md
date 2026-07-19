@@ -1,242 +1,80 @@
-**#  Customer Churn Analysis using Python \& SQLite**
-
-
-
-**## Project Overview**
-
-
-
-Customer churn is one of the most important business metrics because retaining existing customers is generally more cost-effective than acquiring new ones.
-
-
-
-This project analyzes customer data stored in a SQLite database to identify churn patterns, understand customer behavior, and generate business recommendations through Exploratory Data Analysis (EDA).
-
-
-
-
-
-
-
-**##  Objectives**
-
-
-
-**-** Load customer data from SQLite
-
-\- Perform data cleaning and preprocessing
-
-\- Handle missing values
-
-\- Standardize inconsistent data
-
-\- Perform Exploratory Data Analysis (EDA)
-
-\- Visualize customer churn trends
-
-\- Generate business insights
-
-\- Recommend retention strategies
-
-
-
-
-
-
-
-**##  Tech Stack**
-
-
-
-**-** Python
-
-\- SQLite
-
-\- Pandas
-
-\- NumPy
-
-\- Matplotlib
-
-\- Seaborn
-
-\- Jupyter Notebook
-
-
-
-
-
-
-
-**##  Dataset**
-
-
-
-**The project contains three relational tables:**
-
-
-
-**### Customer Table**
-
-\- Customer ID
-
-\- Name
-
-\- Gender
-
-\- State
-
-\- Country
-
-\- Date of Birth
-
-
-
-**### Subscription Table**
-
-\- Plan Type
-
-\- Contract Type
-
-\- Monthly Charges
-
-\- Churn Score
-
-\- CLTV
-
-\- Cancellation Details
-
-
-
-**### Support Table**
-
-\- Complaint Date
-
-\- CSAT Score
-
-\- Complaint Count
-
-\- Escalations
-
-
-
-
-
-
-
-**##  Analysis Performed**
-
-
-
-\- Data Cleaning
-
-\- Missing Value Treatment
-
-\- Gender Standardization
-
-\- Monthly Churn Trend
-
-\- Churn by Plan Type
-
-\- Churn by State
-
-\- Correlation Heatmap
-
-\- Pair Plot
-
-\- Customer Segmentation
-
-
-
-
-
-
-
-**##  Sample Visualizations**
-
-
-
-**-** Monthly Churn Trend
-
-\- Churn by Plan Type
-
-\- State-wise Churn
-
-\- Correlation Heatmap
-
-\- Catplot Analysis
-
-
-
-
-
-
-
-**##  Key Insights**
-
-
-
-\- Churn Score is strongly associated with customer churn.
-
-\- Monthly churn fluctuates over time without a consistent trend.
-
-\- Plan type alone has limited influence on churn.
-
-\- Geographic differences in churn are relatively small.
-
-\- Customer support metrics provide additional context for churn behavior.
-
-
-
-
-
-
-
-**##  Business Recommendations**
-
-
-
-\- Focus retention efforts on customers with high churn scores.
-
-\- Improve customer support to reduce escalations.
-
-\- Monitor churn trends monthly.
-
-\- Personalize offers for at-risk customers.
-
-
-
-
-
-
-
-**##  Future Scope**
-
-
-
-\- Machine Learning Churn Prediction
-
-\- Power BI Dashboard
-
-\- Streamlit Web Application
-
-\- Customer Segmentation using Clustering
-
-
-
-
-
-
-
-**##  Author**
-
-
+#  Customer Churn Analysis
+##  Project Overview
+This project performs an end-to-end customer churn analysis using Python, SQLite, Pandas, Matplotlib, and Seaborn. The objective is to identify customer churn patterns, analyze customer behavior, and generate business insights through data visualization.
+##  Objectives
+- Analyze customer churn trends.
+- Clean and preprocess customer data.
+- Perform Exploratory Data Analysis (EDA).
+- Visualize important KPIs.
+- Generate actionable business insights.
+##  Technologies Used
+- Python
+- SQLite
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+##  Data Cleaning
+The following preprocessing steps were performed:
+- Renamed inconsistent column names
+- Removed unnecessary columns (`interests`, `pincode`)
+- Converted `dob` to datetime format
+- Standardized gender values
+- Handled missing values
+- Created new analytical features
+##  Visualizations
+The project includes:
+- Monthly Churn Trend
+- Churn by Plan Type
+- Churn by State
+- Correlation Heatmap
+- Customer Segmentation
+- Monthly Charges Analysis
+- Churn Risk Analysis
+##  Key Insights
+- Monthly churn fluctuates over time with noticeable peak periods.
+- Standard plan customers show a slightly higher churn rate.
+- Uttar Pradesh recorded the highest churn among analyzed states.
+- Churn Score is strongly correlated with Churn Risk and Churn Flag.
+- Monthly charges alone are not a strong indicator of churn.
+- Customer churn occurs across all subscription plans, indicating multiple influencing factors.
+##  Business Recommendations
+- Focus retention campaigns during high churn months.
+- Improve customer engagement for Standard plan subscribers.
+- Investigate reasons for higher churn in specific states.
+- Use churn score for proactive customer retention.
+- Monitor high-risk customers before contract renewal.
+##  Project Structure
+Customer-Churn-Analysis
+│
+├── churn_analysis.ipynb
+├── customer_churn_1000.db
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+**## ** Run the Project****
+
+
+```bash
+pip install -r requirements.txt
+```
+
+Open:
+
+```
+churn_analysis.ipynb
+```
+
+Run all cells in Jupyter Notebook.
+
+---
+
+##  Author
 
 **Sharvari Kamble**
 
+Computer Engineering Student
 
-
-**Computer Engineering Student**
-
-**Mumbai University**
-
+Mumbai University
